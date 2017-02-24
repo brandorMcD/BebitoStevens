@@ -26,3 +26,32 @@ C:\Users\Brandon\Desktop\bebito stevens game\The Tale of Bebito Stevens\Temp\bin
 C:\Users\Brandon\Desktop\bebito stevens game\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\Brandon\Desktop\bebito stevens game\The Tale of Bebito Stevens\obj\Debug\Assembly-CSharp.dll
 C:\Users\Brandon\Desktop\bebito stevens game\The Tale of Bebito Stevens\obj\Debug\Assembly-CSharp.pdb
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEditor.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.Analytics.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.HoloLens.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.Networking.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.VR.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Mono.Cecil.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Unity.DataContract.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Unity.UNetWeaver.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Unity.CecilTools.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.xml
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEditor.xml
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.UI.xml
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.Networking.xml
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.Analytics.xml
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.HoloLens.xml
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\Temp\bin\Debug\UnityEngine.VR.xml
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\obj\Debug\Assembly-CSharp.dll
+D:\Programs\BebitoStevens\The Tale of Bebito Stevens\obj\Debug\Assembly-CSharp.pdb

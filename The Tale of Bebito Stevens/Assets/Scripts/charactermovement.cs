@@ -8,6 +8,7 @@ public class charactermovement : MonoBehaviour {
     private float movey;
 	public float speed;
     Animator charmovement;
+    bool ifmoving = false;
 
 	// Use this for initialization
 	void Start ()
@@ -20,28 +21,37 @@ public class charactermovement : MonoBehaviour {
         movex = Input.GetAxis("Horizontal");
         movey = Input.GetAxis("Vertical");
 
+
         if (movex < 0)
         {
-            charmovement.SetInteger("CharacterState", 4);//MoveLeft
+            charmovement.SetInteger("CharacterState", 4);//MoveLeftAnimation
+            ifmoving = false;
         }
         else if (movex > 0)
         {
-            charmovement.SetInteger("CharacterState", 3);//MoveRight
+            charmovement.SetInteger("CharacterState", 3);//MoveRightAnimation
+            ifmoving = false;
         }
         else if (movey > 0)
         {
-            charmovement.SetInteger("CharacterState", 2);//MoveUp
+            charmovement.SetInteger("CharacterState", 2);//MoveUpAnimation
+            ifmoving = false;
         }
         else if (movey < 0)
         {
-            charmovement.SetInteger("CharacterState", 1);//MoveDown
+            charmovement.SetInteger("CharacterState", 1);//MoveDownAnimation
+            ifmoving = false;
+        }
+        else if (ifmoving == true)
+        {
+            charmovement.SetInteger("CharacterState", 0);//IdleAnimation
         }
         else
         {
-            charmovement.SetInteger("CharacterState", 0);//Idle
+            ifmoving = true;
         }
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(movex * speed, movey * speed);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(movex * speed, movey * speed);//movecharacter
 
     }
 }
