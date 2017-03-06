@@ -6,7 +6,7 @@ public class Collisionshit : MonoBehaviour {
 
     Transform player;
     Transform Npc;
-    Transform Wall;
+    //Transform Wall;
 
     float changenpcz;
     float changeplayerz;
@@ -17,7 +17,7 @@ public class Collisionshit : MonoBehaviour {
     void Start () {
         GameObject player_col = GameObject.FindGameObjectWithTag("Player");
         GameObject npc_col = GameObject.FindGameObjectWithTag("Npc");
-        GameObject wall_col = GameObject.FindGameObjectWithTag("Wall");
+        //GameObject wall_col = GameObject.FindGameObjectWithTag("Wall");
 
         player = player_col.transform;
         Npc = npc_col.transform;
@@ -25,22 +25,17 @@ public class Collisionshit : MonoBehaviour {
 
         if (player.position.y > Npc.position.y)
         {
-            changeplayerz =  transform.position.z + Npc.position.z;
+            changeplayerz =  player.position.z - (Npc.position.z + 1);
+            Debug.Log("Did this work");
         }
-        else
-        {
-            changenpcz = transform.position.z + player.position.z;
-        }
+
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 zplayerpos = transform.position;
-        Vector3 znpcpos = transform.position;
-        zplayerpos.z = player.position.z + changeplayerz;
-        znpcpos.z = Npc.position.z + changenpcz;
-        transform.position = zplayerpos;
-        transform.position = znpcpos;	
+        Vector3 playerpos = player.position;
+        playerpos.z = player.position.z + changeplayerz;
+        player.position = playerpos;
 	}
 }

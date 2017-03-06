@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class charactermovement : MonoBehaviour {
-	
+
+    Transform player;
     private float movex;
     private float movey;
 	public float speed;
