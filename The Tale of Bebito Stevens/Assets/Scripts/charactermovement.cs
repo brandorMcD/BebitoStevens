@@ -52,6 +52,7 @@ public class charactermovement : MonoBehaviour {
             ifmoving = true;
         }
 
+
         GetComponent<Rigidbody2D>().velocity = new Vector2(movex * speed, movey * speed);//movecharacter
 
     }
