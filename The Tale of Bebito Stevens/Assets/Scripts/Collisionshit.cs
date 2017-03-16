@@ -9,16 +9,20 @@ public class Collisionshit : MonoBehaviour {
     Transform Wall;
     ArrayList NpcHolder;
 
+    public TextBoxManager Dialogue;
+
     float changeNpcz;
     float changeplayerz;
     float changewallz; 
     bool playerygreater = false;
+    public TextBoxManager activatetext;
 
 
     // Use this for initialization
     void Start () {
         GameObject player_col = GameObject.FindGameObjectWithTag("Player");
         GameObject[] npc_col = GameObject.FindGameObjectsWithTag("Npc");
+        activatetext = FindObjectOfType<TextBoxManager>();
         //GameObject wall_col = GameObject.FindGameObjectWithTag("Wall");
 
         player = player_col.transform;
@@ -70,6 +74,10 @@ public class Collisionshit : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("E is pressed");
+                if (col.gameObject.tag == "Npc")
+                {
+                    activatetext.EnableTextBox();
+                }
             }
 
         }

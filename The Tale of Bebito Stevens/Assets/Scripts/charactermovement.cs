@@ -10,6 +10,7 @@ public class charactermovement : MonoBehaviour {
 	public float speed;
     Animator charmovement;
     bool ifmoving = false;
+    public bool canMove;
 
 	// Use this for initialization
 	void Start ()
@@ -19,6 +20,12 @@ public class charactermovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+
+        if (canMove == false)
+        {
+            return;
+        }
+
         movex = Input.GetAxis("Horizontal");
         movey = Input.GetAxis("Vertical");
 
