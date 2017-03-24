@@ -39,11 +39,12 @@ public class Collisionshit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
-	}
+        
+    }
 
     void OnTriggerStay2D(Collider2D col)
     {
+        Debug.Log("In personal Space");
         if (col.gameObject.tag == "Npc")
         {
             Npc = col.gameObject.transform;

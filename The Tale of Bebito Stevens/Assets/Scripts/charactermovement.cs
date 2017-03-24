@@ -21,8 +21,11 @@ public class charactermovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
+
         if (canMove == false)
         {
+            charmovement.SetInteger("CharacterState", 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
             return;
         }
 
@@ -63,4 +66,5 @@ public class charactermovement : MonoBehaviour {
         GetComponent<Rigidbody2D>().velocity = new Vector2(movex * speed, movey * speed);//movecharacter
 
     }
+
 }

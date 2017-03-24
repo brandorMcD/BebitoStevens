@@ -32,7 +32,6 @@ public class TextBoxManager : MonoBehaviour {
         if (endAtLine == 0)
         {
             endAtLine = textLines.Length - 1;
-
         }
 
         if (isActive == true)
@@ -47,22 +46,22 @@ public class TextBoxManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        if(isActive == false)
+        theText.text = textLines[currentLine];
+        if (isActive == false)
         {
             return;
         }
 
-        theText.text = textLines[currentLine];
+        
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             currentLine += 1;
-
         }
 
         if (currentLine > endAtLine)
         {
+            currentLine = 0;
             DisableTextBox();
         }
 	}
@@ -71,10 +70,10 @@ public class TextBoxManager : MonoBehaviour {
     {
         Debug.Log("Text Box Open");
         TextBox.SetActive(true);
-
+        isActive = true;
        // if (stopPlayerMovement == true)
        // {
-            playermovement.canMove = false;
+        playermovement.canMove = false;
         //}
     }
     public void DisableTextBox()
