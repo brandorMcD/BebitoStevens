@@ -20,6 +20,7 @@ public class Collisionshit : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        
         GameObject player_col = GameObject.FindGameObjectWithTag("Player");
         GameObject[] npc_col = GameObject.FindGameObjectsWithTag("Npc");
         activatetext = FindObjectOfType<TextBoxManager>();
@@ -39,12 +40,12 @@ public class Collisionshit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        
+
     }
 
     void OnTriggerStay2D(Collider2D col)
     {
-        Debug.Log("In personal Space");
+        //Debug.Log("In personal Space");
         if (col.gameObject.tag == "Npc")
         {
             Npc = col.gameObject.transform;
@@ -55,7 +56,7 @@ public class Collisionshit : MonoBehaviour {
                 if (playerygreater == false)
                 {
                     //changeNpcz = -1;
-                    Debug.Log("Y is greater");
+                    //Debug.Log("Y is greater");
                     playerygreater = true;
                     Npcpos.z = -1;
                     Npc.position = Npcpos;
@@ -66,20 +67,22 @@ public class Collisionshit : MonoBehaviour {
                 if (playerygreater == true)
                 {
                     //changeNpcz = 1;
-                    Debug.Log("Y is less");
+                    //Debug.Log("Y is less");
                     playerygreater = false;
                     Npcpos.z = 1;
                     Npc.position = Npcpos;
                 }
             }
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("E is pressed");
-                if (col.gameObject.tag == "Npc")
-                {
-                    activatetext.EnableTextBox();
-                }
-            }
+            //if (Input.GetKeyDown(KeyCode.E))
+           // {
+
+                //Debug.Log("E is pressed");
+               // if (col.gameObject.tag == "Npc")
+               // {
+                    
+                   // activatetext.EnableTextBox();
+              //  }
+            //}
 
         }
 

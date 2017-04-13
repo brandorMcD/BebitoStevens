@@ -46,11 +46,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ActivateTextAtLine.cs" />
      <Compile Include="Assets\Scripts\CameraTracksPlayer.cs" />
      <Compile Include="Assets\Scripts\Collisionshit.cs" />
      <Compile Include="Assets\Scripts\TextBoxManager.cs" />
      <Compile Include="Assets\Scripts\charactermovement.cs" />
-     <None Include="Assets\Text\TestText.txt" />
+     <None Include="Assets\Text\creprerper.txt" />
+     <None Include="Assets\Text\TestNpc2.txt" />
+     <None Include="Assets\Text\Minecraftgirl.txt" />
+     <None Include="Assets\Text\TestNpc1.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

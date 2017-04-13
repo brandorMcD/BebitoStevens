@@ -17,12 +17,15 @@ public class TextBoxManager : MonoBehaviour {
 
     public bool isActive;
     public bool stopPlayerMovement;
+    public bool opentextbox;
     public charactermovement playermovement;
+
+
 
     // Use this for initialization
     void Start () {
-
         playermovement = FindObjectOfType<charactermovement>();
+
 
         if (textFile != null)
         {
@@ -46,22 +49,29 @@ public class TextBoxManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        theText.text = textLines[currentLine];
+        
         if (isActive == false)
         {
             return;
         }
 
-        
+        theText.text = textLines[currentLine];
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.E))
         {
+            if(opentextbox == true)
+            {
+                Debug.Log("Test");
+                opentextbox = false;
+                return;
+            }
+            Debug.Log(currentLine); 
             currentLine += 1;
         }
 
         if (currentLine > endAtLine)
         {
-            currentLine = 0;
+            currentLine = 0;    
             DisableTextBox();
         }
 	}
@@ -71,14 +81,16 @@ public class TextBoxManager : MonoBehaviour {
         Debug.Log("Text Box Open");
         TextBox.SetActive(true);
         isActive = true;
-       // if (stopPlayerMovement == true)
-       // {
+        TextBox.GetComponent<Image>().color = new Color(1f, 1f, 1f, .85f);
+        // if (stopPlayerMovement == true)
+        // {
         playermovement.canMove = false;
         //}
     }
     public void DisableTextBox()
     {
         TextBox.SetActive(false);
+        isActive = false;
 
         playermovement.canMove = true;
     }
