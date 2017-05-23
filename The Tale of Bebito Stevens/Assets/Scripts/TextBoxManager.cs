@@ -9,6 +9,7 @@ public class TextBoxManager : MonoBehaviour {
 
     public Text theText;
 
+
     public TextAsset textFile;
     public string[] textLines;
 
@@ -19,6 +20,7 @@ public class TextBoxManager : MonoBehaviour {
     public bool stopPlayerMovement;
     public bool opentextbox;
     public charactermovement playermovement;
+
 
 
 
@@ -61,7 +63,7 @@ public class TextBoxManager : MonoBehaviour {
         {
             if(opentextbox == true)
             {
-                Debug.Log("Test");
+                //Debug.Log("Test");
                 opentextbox = false;
                 return;
             }
@@ -91,7 +93,6 @@ public class TextBoxManager : MonoBehaviour {
     {
         TextBox.SetActive(false);
         isActive = false;
-
         playermovement.canMove = true;
     }
 
@@ -103,5 +104,11 @@ public class TextBoxManager : MonoBehaviour {
             textLines = (theText.text.Split('\n'));
         }
 
+    }
+
+    public void ChangePortait(Image portaits,string PortaitName)
+    {
+        Debug.Log(PortaitName);
+        portaits.sprite = Resources.Load<Sprite>("Sprites/Sprite Portaits/" + PortaitName);
     }
 }

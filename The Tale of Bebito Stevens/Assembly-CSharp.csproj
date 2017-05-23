@@ -53,7 +53,6 @@
      <Compile Include="Assets\Scripts\charactermovement.cs" />
      <None Include="Assets\Text\creprerper.txt" />
      <None Include="Assets\Text\TestNpc2.txt" />
-     <None Include="Assets\Text\Minecraftgirl.txt" />
      <None Include="Assets\Text\TestNpc1.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

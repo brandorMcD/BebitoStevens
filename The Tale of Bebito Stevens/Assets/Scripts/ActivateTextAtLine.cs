@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class ActivateTextAtLine : MonoBehaviour {
     public TextAsset TheText;
+    public Image portaits;
 
     public int StartLine;
     public int EndLine;
@@ -15,8 +18,12 @@ public class ActivateTextAtLine : MonoBehaviour {
     public bool RequireButtonPress;
     private bool WaitForPress;
 
-	// Use this for initialization
-	void Start () {
+    public int Portaitnumber;
+    private string[] PortaitName = {"cpperperpee", "TestNpcPortait"};
+
+
+    // Use this for initialization
+    void Start () {
         TextManager = FindObjectOfType<TextBoxManager>();
 		
 	}
@@ -30,6 +37,7 @@ public class ActivateTextAtLine : MonoBehaviour {
                 TextManager.endAtLine = EndLine;
                 TextManager.opentextbox = true;
                 TextManager.EnableTextBox();
+                TextManager.ChangePortait(portaits,PortaitName[Portaitnumber]);
                 WaitForPress = false;
 
 
@@ -61,6 +69,10 @@ public class ActivateTextAtLine : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+
     }
 
     void OnTriggerExit2D(Collider2D other)
